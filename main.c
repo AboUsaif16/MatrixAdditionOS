@@ -10,10 +10,7 @@ struct strc{
 void *add(void *var){
 
 	struct strc *data = var;
-	int sum = 0;
-
-	sum = data->e1 + data->e2;
-	*(data->s) = sum;
+	*(data->s) = data->e1 + data->e2;
 
 	pthread_exit(0);
 }
